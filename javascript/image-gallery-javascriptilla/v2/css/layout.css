@@ -1,0 +1,16 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  padding: 1rem;
+}
+h1 {
+  font-size: 2rem;
+  padding: 1rem;
+}
+ul {
+  padding: 1rem;
+}
+li {
+  padding: 0.5rem;
+}

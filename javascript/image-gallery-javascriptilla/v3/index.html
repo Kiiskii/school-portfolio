@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Gallery Javascriptillä V1</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/layout.css" />
+  </head>
+  <body>
+    <main>
+      <h1>snapshots</h1>
+      <ul>
+        <li>
+          <a
+            href="./images/js-gallery-fireworks.jpeg"
+            title="A Firework Display"
+            onclick="showPic(this); return false;"
+            >Fireworks</a
+          >
+        </li>
+        <li>
+          <a
+            href="./images/js-gallery-coffee.jpeg"
+            title="A Cup of Black Coffee"
+            onclick="showPic(this); return false;"
+            >Coffee</a
+          >
+        </li>
+        <li>
+          <a
+            href="./images/js-gallery-rose.jpeg"
+            title="A red, red Rose"
+            onclick="showPic(this); return false;"
+            >Rose</a
+          >
+        </li>
+        <li>
+          <a
+            href="./images/js-gallery-bigben.jpeg"
+            title="The Famous Clock"
+            onclick="showPic(this); return false;"
+            >BigBen</a
+          >
+        </li>
+      </ul>
+      <figure>
+        <img
+          id="placeholder"
+          src="https://via.placeholder.com/400x300.png/7393B3/FFFFFF?text=Anton+Kiiskin+Placeholder"
+          alt="My Image Gallery"
+        />
+      </figure>
+      <p id="description">Choose an image</p>
+    </main>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

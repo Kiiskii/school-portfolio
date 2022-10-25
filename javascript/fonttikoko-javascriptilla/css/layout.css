@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Mansalva&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Grenze&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Turret Road&display=swap");
+
+html {
+  font-size: 62.5%;
+  font-family: "Courier New", Courier, monospace;
+}
+body {
+  padding: 0.5rem;
+  background: rgb(246, 255, 149);
+  background: rgb(246, 255, 149);
+  background: linear-gradient(
+    to bottom right,
+    rgba(246, 255, 149, 1) 7%,
+    rgba(247, 255, 158, 1) 12%,
+    rgba(254, 255, 233, 1) 100%
+  );
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+p {
+  font-size: 1.2rem;
+  padding-top: 0.5rem;
+}
+h2 {
+  font-size: 1.5rem;
+  padding-top: 0.5rem;
+}
+#listat {
+  display: flex;
+  flex-direction: row;
+}
+ol {
+  list-style-type: style;
+  padding: 0.5rem;
+  margin-left: 2rem;
+}
+li {
+  padding-top: 0.5rem;
+  font-size: 10px;
+}
+#napit {
+  display: flex;
+  flex-direction: row;
+}
+button {
+  display: flex;
+  align-items: center;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding: 0.7rem 1.4rem 0.7rem 1.1rem;
+  color: white;
+  background: #ad5389;
+  background: linear-gradient(
+    0deg,
+    rgba(20, 167, 62, 1) 0%,
+    rgba(102, 247, 113, 1) 100%
+  );
+  border: none;
+  box-shadow: 0 0.7em 1.5em -0.5em #14a73e98;
+  letter-spacing: 0.05em;
+  border-radius: 20em;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  margin: 1rem 1rem 0 0;
+}
+
+button:hover {
+  box-shadow: 0 0.5em 1.5em -0.5em #14a73e98;
+}
+
+button:active {
+  box-shadow: 0 0.3em 1em -0.5em #14a73e98;
+}
+
+#kokotyyli {
+  float: right;
+  text-align: right;
+  width: 100%;
+}
+
+@media only screen and (min-width: 769px) {
+  body {
+    padding: 2rem;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  p {
+    font-size: 1.5rem;
+    padding-top: 1rem;
+  }
+  h2 {
+    font-size: 1.8rem;
+    padding-top: 1rem;
+  }
+  ol {
+    padding: 1rem;
+    margin-left: 4rem;
+  }
+}

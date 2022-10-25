@@ -1,0 +1,77 @@
+/* Mobiili näkymä (tabletti sama) */
+
+html {
+  font-size: 62.5%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  padding: 4rem;
+}
+main {
+  background-color: lightcyan;
+  box-shadow: 11px 8px 18px 9px rgba(0, 0, 0, 0.52);
+  animation: mainanim 5s infinite;
+}
+@keyframes mainanim {
+  50% {
+    transform: translateY(1rem);
+  }
+  100% {
+    transform: translate();
+  }
+}
+h1 {
+  font-size: 2rem;
+  padding: 1rem;
+}
+p {
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+.ylatunniste {
+  border: dotted black 2px;
+  border-bottom: none;
+}
+#rinnakkain {
+  border: dotted black 2px;
+  border-bottom: none;
+}
+figure {
+  display: block;
+  padding: 1rem;
+}
+figure img {
+  max-width: 100%;
+  box-shadow: 3px 3px 18px 2px rgba(0, 0, 0, 0.52);
+}
+footer {
+  border: dotted black 2px;
+  display: flex;
+  flex-direction: row;
+}
+footer > * {
+  flex: 1;
+}
+#clock {
+  font-size: 2rem;
+  text-align: right;
+  padding-top: 1rem;
+  padding-right: 1rem;
+}
+
+@media only screen and (min-width: 769px) {
+  #rinnakkain {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 2;
+  }
+  #rinnakkain > * {
+    flex: 1;
+  }
+  h1 {
+    font-size: 2.3rem;
+  }
+  p {
+    font-size: 1.8rem;
+  }
+}
