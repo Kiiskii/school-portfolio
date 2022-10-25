@@ -1,0 +1,117 @@
+/* Mobiili näkymä */
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 1rem;
+  background-color: gainsboro;
+  background-image: linear-gradient(to bottom right, rgb(134, 157, 239), white);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+h1,
+h2,
+h3,
+ul,
+ul li,
+p {
+  margin: 1rem;
+}
+h1 {
+  font-size: 2.6rem;
+  padding: 8rem 0 0 0;
+}
+h2 {
+  font-size: 1.8rem;
+}
+h3 {
+  font-size: 1.4rem;
+}
+ul {
+  font-size: 1rem;
+}
+a {
+  color: rgb(137, 55, 55);
+  text-decoration: none;
+}
+a:hover {
+  color: black;
+  padding: 0.5rem;
+}
+header {
+  border-bottom: 1px solid black;
+}
+header,
+section,
+footer {
+  padding: 1rem;
+}
+header {
+  color: black;
+  text-align: center;
+  height: 80vh;
+}
+.logofront {
+  max-width: 10rem;
+  float: inline-end;
+  margin: 0 -1rem 3rem auto;
+}
+.bsn-beige {
+  color: black;
+  fill: black;
+  text-align: left;
+}
+footer {
+  color: black;
+}
+p {
+  font-size: 1.4rem;
+}
+.logot {
+  font-size: 3rem;
+  float: right;
+  margin: -3rem 0.5rem 0.5rem 0.5rem;
+}
+.logot a {
+  color: black;
+}
+.logot a:hover {
+  color: grey;
+}
+iframe {
+  display: none;
+}
+
+/* Tablet näkymä */
+
+@media only screen and (min-width: 426px) {
+  header {
+    height: 50vh;
+  }
+}
+/* Desktop näkymä */
+
+@media only screen and (min-width: 769px) {
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    border-bottom: solid black;
+    height: 75vh;
+  }
+  iframe {
+    display: block;
+    border-left: solid black;
+    width: 100%;
+  }
+  h1 {
+    padding: 0;
+  }
+  header {
+    height: 10vh;
+  }
+}
