@@ -53,7 +53,6 @@ footer {
 header {
   color: black;
   text-align: center;
-  height: 80vh;
 }
 .logofront {
   max-width: 10rem;
@@ -85,6 +84,16 @@ p {
 iframe {
   display: none;
 }
+#navbar > *{
+  display: flex;
+  flex-direction: row;
+}
+.dropdownContent {
+  display: none;
+}
+.show {
+  display: block;
+}
 
 /* Tablet näkymä */
 
@@ -98,7 +107,7 @@ iframe {
 @media only screen and (min-width: 769px) {
   .wrapper {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
     border-bottom: solid black;
     height: 75vh;
