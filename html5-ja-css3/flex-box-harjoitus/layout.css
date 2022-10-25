@@ -1,0 +1,168 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.3rem;
+    background-color: darkcyan;
+    padding: 1rem;
+}
+
+p {
+    margin-block-end: 1rem;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.wrapper>* {
+    padding: 1rem;
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
+.palkka {
+    padding: 0;
+}
+
+.palkki {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+/*
+.palkki,
+.palkki li {
+    text-align: center;
+    flex-basis: 100%;
+}
+*/
+
+.palkki li {
+    flex-grow: 1;
+    background-color: white;
+    border: solid 1px black;
+    padding: 1rem;
+    transition: 5s;
+    text-align: center;
+    flex-basis: 0;
+
+}
+
+.palkki li:hover {
+    background-color: rgb(95, 95, 209);
+    transform: rotate(1080deg);
+}
+
+.logot {
+    font-size: 3rem;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin-block-end: -1rem;
+    margin-inline-start: -1rem;
+    margin-inline-end: -1rem;
+}
+
+.logot li {
+    flex-basis: 100%;
+    text-align: center;
+    padding: 2rem;
+    transition: 2s;
+}
+
+#fbook:hover {
+    background-color: rgb(95, 95, 209);
+}
+
+#twit:hover {
+    background-color: rgb(95, 95, 209);
+}
+
+#kirje:hover {
+    background-color: rgb(95, 95, 209);
+}
+
+#fbook {
+    background-color: #4B5497;
+    border-radius: 20px 0 0 0;
+}
+
+#twit {
+    background-color: #6DA5EE;
+    border-radius: 0 0 0 0;
+}
+
+#kirje {
+    background-color: red;
+    border-radius: 0 20px 0 0;
+}
+
+.header {
+    background-color: gold;
+    border-radius: 20px 20px 0 0;
+}
+
+.main {
+    background-color: darkorange;
+}
+
+.aside-1 {
+    background-color: mediumseagreen;
+}
+
+.aside-2 {
+    background-color: seagreen;
+}
+
+.footer {
+    background: lightgreen;
+    border-radius: 0 0 20px 20px;
+}
+
+/*Tableet näkymä*/
+@media only screen and (min-width: 426px) {
+    .wrapper {
+        flex-direction: row;
+    }
+
+    .aside-1 {
+        flex-basis: auto;
+    }
+
+    .aside-2 {
+        flex-basis: auto;
+    }
+}
+
+/*Desktop näkymä*/
+@media only screen and (min-width: 769px) {
+    .aside-1 {
+        order: 1;
+        flex-basis: 0;
+    }
+
+    .main {
+        order: 2;
+        flex-basis: 400px;
+    }
+
+
+    .aside-2 {
+        order: 3;
+        flex-basis: 0;
+    }
+
+    .logot {
+        order: 4;
+    }
+
+    .footer {
+        order: 5;
+    }
+}

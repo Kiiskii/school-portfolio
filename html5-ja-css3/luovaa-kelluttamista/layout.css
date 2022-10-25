@@ -1,0 +1,115 @@
+/* Mobiili näkymä */
+
+html {
+  font-size: 62.5%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.flexer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.container {
+  width: 40rem;
+  border: solid black;
+  border-radius: 1rem 1rem 1rem 1rem;
+  background-color: gainsboro;
+  background-image: linear-gradient(to bottom right, rgb(134, 157, 239), white);
+  margin: 0.5rem;
+  padding: 1rem;
+}
+.container1 {
+  width: 40rem;
+  border: solid black;
+  border-radius: 1rem 1rem 1rem 1rem;
+  background-color: gainsboro;
+  background-image: linear-gradient(to bottom left, white, rgb(134, 157, 239));
+  margin: 0.5rem;
+  padding: 1rem;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: 12rem 28rem;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "kuva otsikko"
+    "kuva teksti";
+  border-bottom: dotted black;
+  margin-block-end: 1rem;
+}
+/*.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}*/
+.heading {
+  /*float: right;
+  width: 70%;
+  box-sizing: border-box;*/
+  grid-area: otsikko;
+  margin-block-end: 0.5rem;
+}
+.image {
+  /*float: left;
+  width: 30%;
+  box-sizing: border-box;*/
+  grid-area: kuva;
+  grid-row: 1 / span 2;
+}
+.text {
+  /*float: left;
+  width: 70%;
+  box-sizing: border-box;*/
+  grid-area: teksti;
+  margin-block-end: 0.5rem;
+}
+.container .image img {
+  padding: 1rem;
+  border: solid lightgray 1px;
+  border-bottom: solid darkgray 1px;
+  border-right: solid darkgray 1px;
+  box-shadow: 3px 3px darkgray;
+  max-width: 100%;
+  background-color: white;
+}
+.container1 .image img {
+  padding: 1rem;
+  border: solid lightgray 1px;
+  border-bottom: solid darkgray 1px;
+  border-right: solid darkgray 1px;
+  box-shadow: 3px 3px darkgray;
+  max-width: 100%;
+  background-color: white;
+}
+.heading {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+p {
+  margin-block-end: 0.5rem;
+}
+#paris {
+  display: grid;
+  grid-template-columns: 28rem 12rem;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "otsikko kuva"
+    "teksti kuva";
+}
+#milano {
+  border-bottom: 0;
+  margin-block-end: 0;
+}
+
+/* tablet ja desktop näkymä */
+
+@media only screen and (min-width: 426px) {
+  .flexer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+}

@@ -1,0 +1,62 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin: 1rem;
+}
+
+h1 {
+    background-color: #DF1428;
+    padding: 1rem;
+}
+
+p {
+    padding: 1rem;
+}
+
+nav {
+    background-color: #F38F2D
+}
+
+/*Kikkaillaan aside- ja section elementti yhtä korkeaksi*/
+
+.container {
+    overflow: hidden;
+}
+
+.column {
+    padding-bottom: 1000px;
+    margin-bottom: -1000px;
+}
+
+section {
+    background-color: #FFC000;
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    padding-block-end: 1rem;
+}
+
+section article {
+    background-color: #7AC141;
+    margin-inline-start: 1rem;
+    margin-inline-start: 1rem;
+    margin-inline-end: 1rem;
+    margin-block-end: 1rem;
+}
+
+aside {
+    background-color: #026FB4;
+    float: right;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+footer {
+    background-color: #932B8E;
+    clear: both;
+}

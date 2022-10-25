@@ -1,0 +1,71 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    /* gap: 5px; */
+}
+
+/*Lisätään html-elementtiin flex*/
+.parent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/*Muotoillaan parent-elemntin lapset*/
+.parent>* {
+    flex-basis: 100%;
+    flex-grow: 1;
+
+}
+
+/*lisätään tarkempi sääntö, eli se on section ja aside parentin sisällä*/
+
+/*.parent section, parent aside {
+    flex-basis: 0px;
+    flex-grow: säännöllä saadaan leveyttä muokattua*/
+
+.parent section {
+    flex-basis: 0px;
+}
+
+.parent aside {
+    flex-basis: 0px;
+}
+
+h1 {
+    background-color: #DF1428;
+    padding: 1rem;
+}
+
+p {
+    padding: 1rem;
+}
+
+nav {
+    background-color: #F38F2D
+}
+
+section {
+    background-color: #FFC000;
+    padding-block-end: 1rem;
+}
+
+section article {
+    background-color: #7AC141;
+    margin-block-start: 1rem;
+    margin-inline-start: 1rem;
+    margin-inline-end: 1rem;
+}
+
+aside {
+    background-color: #026FB4;
+}
+
+footer {
+    background-color: #932B8E;
+}

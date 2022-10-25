@@ -1,0 +1,59 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+}
+
+.parent {
+    margin-inline-start: 1rem;
+    margin-inline-end: 1rem;
+    margin-block-start: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.parent>* {
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+.parent .even {
+    flex-basis: 0;
+    flex-grow: 2;
+    margin-inline-end: 3rem;
+
+}
+
+.even p:nth-child(even) {
+    background-color: #E1EAC5;
+    border-radius: 0 0 20px 0;
+}
+
+.odd p:nth-child(odd) {
+    background-color: #E1EAC5;
+    border-radius: 0 0 20px 0;
+}
+
+p {
+    padding: 1rem;
+}
+
+summary {
+    margin-inline-start: 5rem;
+    margin-inline-end: 3rem;
+    margin-block-start: 5rem;
+}
+
+h1 {
+    font-size: 4rem;
+    padding: 1rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    padding: 1rem;
+}

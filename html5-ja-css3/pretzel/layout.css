@@ -1,0 +1,165 @@
+/* Mobile first */
+
+html {
+  font-size: 62.5%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p {
+  padding-block-end: 1rem;
+}
+
+#special {
+  background-image: url(./images/special-bg.png);
+  background-color: #5f7f86;
+  background-repeat: repeat-x;
+  background-position: bottom;
+  color: white;
+  padding: 1rem;
+}
+
+.text1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.3rem;
+}
+
+.text2 {
+  opacity: 0.5;
+}
+
+#wrapper {
+  background-image: url(./images/grunge.png);
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  border-bottom: solid 3px rgb(5, 4, 4, 0.1);
+  margin-block-end: 1rem;
+}
+
+header figure {
+  display: block;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  width: 20%;
+}
+
+ul a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  flex-basis: 100%;
+  padding: 1rem;
+  opacity: 50%;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+ul > * {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.undertale {
+  display: none;
+}
+
+nav a.current {
+  color: black;
+  font-weight: bold;
+  opacity: 100%;
+}
+
+#main img {
+  width: 100%;
+}
+#callout {
+  background-color: #f6e8c8;
+  padding: 1rem;
+  text-align: center;
+  margin-block-end: 1rem;
+}
+h3 {
+  padding-block-start: 1rem;
+}
+
+table {
+  width: 100%;
+  border-bottom: solid rgb(5, 4, 4, 0.1);
+}
+
+tr,
+td {
+  text-align: left;
+  width: 50%;
+}
+
+footer {
+  opacity: 50%;
+  text-align: center;
+}
+footer img {
+  display: block;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  width: 5%;
+}
+
+/* Tablet näkymä */
+
+@media only screen and (min-width: 426px) {
+  header {
+    display: flex;
+    flex-direction: row;
+  }
+  nav {
+    margin-block-start: auto;
+    margin-block-end: auto;
+  }
+  header nav {
+    flex-grow: 1;
+  }
+  header img {
+    flex-grow: 1;
+    width: auto;
+    margin-block-end: 1rem;
+  }
+}
+
+/* Desktop näkymä */
+
+@media only screen and (min-width: 769px) {
+  .undertale {
+    display: block;
+    text-transform: none;
+  }
+  figure {
+    width: auto;
+  }
+  #mainside {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 100%;
+    flex-wrap: nowrap;
+  }
+  #main {
+    flex-grow: 3;
+    padding: 1rem;
+  }
+  #aside {
+    flex-grow: 2;
+    padding: 1rem;
+  }
+  li {
+    text-align: left;
+  }
+}

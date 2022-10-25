@@ -1,0 +1,260 @@
+/*
+Mobile first!
+*/
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 1rem;
+}
+.container {
+  background-color: #83c05b;
+}
+#logo {
+  background-color: #83c05b;
+  padding: 1rem;
+}
+#logo img {
+  display: block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.linkit {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.linkit > * {
+  flex-basis: 0;
+  flex-grow: 1;
+  background-color: #9dcd7c;
+  text-align: center;
+  border: solid 1px #659343;
+  border-radius: 1rem;
+  color: white;
+  font-size: 1.4rem;
+  text-decoration: none;
+  padding: 1rem;
+}
+
+nav a:hover {
+  color: #0b1e38;
+  background-color: #9be162;
+  
+}
+#vision {
+  color: black;
+  font-size: 1.2rem;
+}
+figure {
+  display: none;
+}
+h2 {
+  font-size: 1.5rem;
+  line-height: 1.7rem;
+  padding: 1rem;
+}
+h3 {
+  background-color: #CBCBCB;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-block-end: 1rem;
+  padding: 1rem;
+}
+p {
+  font-size: 1rem;
+  padding: 1rem;
+  line-height: 1.4rem;
+}
+.date {
+  font-weight: bold;
+}
+
+.fa-angle-right {
+  float: right;
+}
+#boxes {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+#boxes > * {
+  background-color: white;
+  padding: 1rem;
+  margin-block-end: 1rem;
+}
+#specials img {
+  width: 100%;
+}
+#events img {
+  width: 100%;
+}
+#news table {
+  width: 100%;
+  font-size: 1.3rem;
+}
+#news tr {
+  height: 1.5rem;
+}
+footer {
+  color: white;
+}
+footer a:link {
+  color: white;
+}
+footer a:hover {
+  color: #0b1e38;
+}
+#phone {
+  color: #0b1e38;
+}
+.some {
+  float: right;
+  font-size: 1rem;
+  margin-block-start: -6rem;
+  margin-inline-end: 1rem;
+}
+
+/* Media query, tablet näkymä */
+
+@media only screen and (min-width: 426px) {
+  #logo {
+    background-color: #83c05b;
+    padding: 1rem;
+  }
+  #logo img {
+    display: block;
+    width: 50%;
+    margin-inline-start: 1rem;
+  }
+
+  .linkit {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-block-end: 1rem;
+  }
+  .linkit > * {
+    padding: 1.5rem;
+  }
+
+  #vision {
+    background-color: white;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    padding: 1rem;
+    margin-block-end: 1rem;
+  }
+  #vision section {
+    background-color: #efecdd;
+    flex-basis: 0;
+    flex-grow: 3;
+    padding: 1rem;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+  }
+  h2 {
+    font-size: 2rem;
+    line-height: 2.2rem;
+    position: absolute;
+    vertical-align: middle;
+    margin: 3rem;
+  }
+  p {
+    font-size: 1.4rem;
+    padding: 1rem;
+    line-height: 1.7rem;
+  }
+  figure {
+    display: block;
+    flex-basis: 0;
+    flex-grow: 1;
+  }
+  figure img {
+    width: 100%;
+  }
+
+  #boxes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  #boxes > * {
+    flex-basis: 0;
+    flex-grow: 2;
+    background-color: white;
+    padding: 1rem;
+    margin-block-end: 1rem;
+}
+#specials {
+   order: 1;
+  }
+  #events {
+    order: 2;
+  }
+
+  #news {
+    flex-basis: 100%;
+    order: 3;
+  }
+  #news table {
+    width: 50%;
+    font-size: 1.3rem;
+  }
+  #news tr {
+    height: 1.6rem;
+  }
+}
+
+
+/* Media query, desktop näkymä */
+
+@media only screen and (min-width: 769px) {
+    body {
+        margin: 0rem;
+    }
+    #logo {
+        margin-block-start: 2rem;
+    }
+.container {
+    padding: 1rem;
+}
+.linkit > * {
+    padding: 2rem;
+}
+nav a:link {
+    font-size: 2rem;
+}
+h2 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    padding: 1rem;
+}
+h3 {
+    font-size: 1.6rem;
+}
+p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+#news {
+    flex-basis: 0;
+  }
+  #news table {
+    width: 100%;
+    font-size: 1.5rem;
+  }
+
+  .some {
+    float: right;
+    font-size: 2rem;
+    margin-block-start: -7rem;
+    margin-inline-end: 1rem;
+  }
+
+}

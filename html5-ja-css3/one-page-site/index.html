@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>One Page Site</title>
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./layout.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <ul>
+        <li id="portfolio"><a href="#anchor1">Portfolio</a></li>
+        <li class="navit"><a href="#anchor2" class="navit">Menneisyys</a></li>
+        <li class="navit"><a href="#anchor3" class="navit">Nykyisyys</a></li>
+        <li class="navit"><a href="#anchor4" class="navit">Tulevaisuus</a></li>
+        <li class="navit"><a href="#anchor5" class="navit">Yhteystiedot</a></li>
+      </ul>
+    </nav>
+    <section class="wrapper">
+      <section class="portfolio">
+        <span id="anchor1" class="anchor"></span>
+        <section class="aboutme">
+          <h1>Portfolio - Anton Kiiski</h1>
+          <h2>
+            Haluan esitellä osaamistani seuraavien itse tekemieni palvelujen
+            avulla
+          </h2>
+          <ol>
+            <li>Eka esimerkki</li>
+            <li>Toka esimerkki</li>
+            <li>Kolmas esimerkki</li>
+            <li>Neljäs esimerkki</li>
+            <li>Viides esimerkki</li>
+            <li>Kuudes esimerkki</li>
+          </ol>
+        </section>
+      </section>
+      <article id="menneisyys" class="anchorparent">
+        <span id="anchor2" class="anchor"></span>
+        <h3>Menneisyys</h3>
+        <section class="titlecard">
+          <section>
+            <figure>
+              <img src="./images/city-night3.jpeg" alt="Night City" />
+            </figure>
+            <h4>Card Title One</h4>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Consequuntur alias dolorem nostrum qui beatae quo architecto nisi
+              corrupti nesciunt vitae, ex distinctio hic, fugiat culpa pariatur
+              eaque et molestiae. Dolor.
+            </p>
+            <p class="seemore"><a href="#">See More</a></p>
+          </section>
+          <section>
+            <figure>
+              <img src="./images/city-night3.jpeg" alt="Night City" />
+            </figure>
+            <h4>Card Title Two</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Blanditiis nesciunt sit mollitia molestias, ullam rem cum eius
+              nostrum nisi repellendus perspiciatis eaque voluptatem et commodi!
+              Nemo recusandae facere inventore nostrum.
+            </p>
+            <p class="seemore"><a href="#">See More</a></p>
+          </section>
+          <section>
+            <figure>
+              <img src="./images/city-night3.jpeg" alt="Night City" />
+            </figure>
+            <h4>Card Title Three</h4>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis
+              quaerat beatae quisquam quis similique excepturi ipsum repellendus
+              eum repellat, quae soluta consequatur nam quia minus, atque, harum
+              labore voluptas debitis.
+            </p>
+            <p class="seemore"><a href="#">See More</a></p>
+          </section>
+        </section>
+      </article>
+      <section id="nykyisyys" class="anchorparent">
+        <span id="anchor3" class="anchor"></span>
+        <h2>Nykyisyys</h2>
+        <figure class="floatimgright">
+          <img src="./images/city-night1.jpeg" alt="Night City 1" />
+        </figure>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi
+          maxime quae ipsum quis ex blanditiis dolorem optio beatae nulla veniam
+          libero accusantium cumque eum reiciendis, est magnam, fuga, nihil
+          nesciunt!
+        </p>
+      </section>
+      <section id="tulevaisuus" class="anchorparent">
+        <h2>Tulevaisuus</h2>
+        <span id="anchor4" class="anchor"></span>
+        <figure class="floatimgleft">
+          <img src="./images/city-night4.jpeg" alt="Night City 4" />
+        </figure>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia
+          eligendi, aut fugiat quasi qui consequuntur sit officia aspernatur
+          tenetur illum a. Voluptatibus, autem eaque nostrum recusandae nobis ad
+          explicabo amet. Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Ab autem numquam sapiente. Sed aut facere deserunt temporibus
+          fuga, ad natus doloribus aliquid non, reiciendis dolore provident
+          eaque tempore necessitatibus! Eligendi. Lorem ipsum dolor sit amet
+          consectetur, adipisicing elit. Quo non perferendis quidem, magni aut
+          deleniti exercitationem provident facilis nisi repellat recusandae,
+          repudiandae in ut illo expedita voluptates aliquam voluptatem
+          laboriosam.
+        </p>
+      </section>
+      <section id="contact" class="anchorparent">
+        <h2>Contact Me</h2>
+        <span id="anchor5" class="anchor"></span>
+        <form>
+          <table id="contacttable">
+            <tr>
+              <th><label for="nimi">Nimi</label></th>
+              <th><input type="text" id="nimi" name="nimi" /></th>
+            </tr>
+            <tr>
+              <th><label for="email">Sähköposti</label></th>
+              <th><input type="text" id="email" name="email" /></th>
+            </tr>
+            <tr>
+              <th><label for="palaute">Palautetta</label></th>
+              <th><input type="text" id="palaute" name="palaute" /></th>
+            </tr>
+          </table>
+          <input type="submit" id="button" value="Lähetä"></button>
+        </form>
+      </section>
+      <footer>
+        <p>2022 © Anton Kiiski</p>
+      </footer>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsiivinen Kuva-Albumi</title>
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./layout.css" />
+  </head>
+  <body class="no-touch">
+    <main class="wrapper">
+      <section class="box">
+        <figure class="kuva">
+          <img src="./images/respokuva1.jpeg" alt="Greenhouse roses" />
+          <article class="title">Greenhouse roses</article>
+        </figure>
+      </section>
+      <section class="box">
+        <figure class="kuva">
+          <img src="./images/respokuva2.jpeg" alt="Pink flower" />
+          <article class="title">Pink flower</article>
+        </figure>
+      </section>
+      <section class="box">
+        <figure class="kuva">
+          <img src="./images/respokuva3.jpeg" alt="Bumblebee" />
+          <article class="title">Bumblebee</article>
+        </figure>
+      </section>
+      <section class="box">
+        <figure class="kuva">
+          <img src="./images/respokuva4.jpeg" alt="Beautiful garden" />
+          <article class="title">Beautiful garden</article>
+        </figure>
+      </section>
+      <section class="box">
+        <figure class="kuva">
+          <img
+            src="./images/respokuva5.jpeg"
+            alt="River flowing through a garden"
+          />
+          <article class="title">River flowing through a garden</article>
+        </figure>
+      </section>
+      <section class="box">
+        <figure class="kuva">
+          <img src="./images/respokuva6.jpeg" alt="Park bench" />
+          <article class="title">Park bench</article>
+        </figure>
+      </section>
+      <section class="box">
+        <figure class="kuva">
+          <img src="./images/respokuva7.jpeg" alt="Blue butterfly" />
+          <article class="title">Blue butterfly</article>
+        </figure>
+      </section>
+      <section class="box">
+        <figure class="kuva">
+          <img src="./images/respokuva8.jpeg" alt="Yard plan" />
+          <article class="title">Yard plan</article>
+        </figure>
+      </section>
+      <section class="box">
+        <figure class="kuva">
+          <img src="./images/respokuva9.jpeg" alt="Beer garden" />
+          <article class="title">Beer garden</article>
+        </figure>
+      </section>
+      <section class="box">
+        <figure class="kuva">
+          <img src="./images/respokuva10.jpeg" alt="Purple flowers" />
+          <article class="title">Purple flowers</article>
+        </figure>
+      </section>
+      <section class="box">
+        <figure class="kuva">
+          <img src="./images/respokuva11.jpeg" alt="Bushes and a brick wall" />
+          <article class="title">Bushes and a brick wall</article>
+        </figure>
+      </section>
+      <section class="box">
+        <figure class="kuva">
+          <img src="./images/respokuva12.jpeg" alt="Garden path" />
+          <article class="title">Garden path</article>
+        </figure>
+      </section>
+    </main>
+    <!--Javascript for touchsreen-->
+
+    <script
+      type="text/javascript"
+      src="http://code.jquery.com/jquery-1.8.3.js"
+    ></script>
+    <script type="text/javascript">
+      $(function () {
+        // See if this is a touch device
+        if ("ontouchstart" in window) {
+          // Set the correct [touchscreen] body class
+          $("body").removeClass("no-touch").addClass("touch");
+
+          // Add the touch toggle to show text when tapped
+          $("div.boxInner img").click(function () {
+            $(this).closest(".boxInner").toggleClass("touchFocus");
+          });
+        }
+      });
+    </script>
+  </body>
+</html>

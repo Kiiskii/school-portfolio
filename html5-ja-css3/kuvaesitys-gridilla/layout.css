@@ -1,0 +1,105 @@
+html {
+  font-size: 62.5%;
+}
+header {
+  font-size: 2.5rem;
+  color: darkorange;
+  padding: 1rem;
+  background-color: beige;
+  border: solid black;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 5vw);
+  grid-gap: 1.5rem;
+  padding: 1rem;
+  background-color: beige;
+  border: solid black;
+}
+.gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border: solid grey;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+/* Cool fists */
+.kuva1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+/* Cool cat */
+.kuva2 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+/* Water drops */
+.kuva3 {
+  grid-column-start: 5;
+  grid-column-end: 8;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+/* Another cool cat */
+.kuva4 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 5;
+}
+/* Cool dog */
+.kuva5 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 4;
+  grid-row-end: 6;
+}
+/* Straw hat */
+.kuva6 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 6;
+  grid-row-end: 8;
+}
+/* Red hair swordsman */
+.kuva7 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 8;
+}
+/* Rengoku */
+.kuva8 {
+  grid-column-start: 3;
+  grid-column-end: 6;
+  grid-row-start: 5;
+  grid-row-end: 8;
+}
+/* Zenitsu */
+.kuva9 {
+  grid-column-start: 6;
+  grid-column-end: 7;
+  grid-row-start: 5;
+  grid-row-end: 8;
+}
+/* Sasuke */
+.kuva11 {
+  grid-column-start: 7;
+  grid-column-end: 8;
+  grid-row-start: 5;
+  grid-row-end: 8;
+}
+/* Goujou */
+.kuva12 {
+  grid-column-start: 5;
+  grid-column-end: 8;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
