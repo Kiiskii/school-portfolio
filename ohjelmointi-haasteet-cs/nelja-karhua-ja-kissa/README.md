@@ -1,1 +1,0 @@
-# nelja-karhua-ja-kissa

@@ -1,1 +1,0 @@
-# ritariryhma-liikkeelle
