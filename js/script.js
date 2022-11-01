@@ -1,8 +1,9 @@
 let iframe = document.getElementById("project");
 console.log(iframe);
-let links = document.querySelectorAll("nav li a");
+let links = document.querySelectorAll("nav a");
 console.log(links);
 let dropdownContents = document.querySelectorAll(".dropdownContent");
+let home = document.getElementById("home");
 
 function myFunction1() {
   let button = document.getElementById("dropdown1");
@@ -38,5 +39,17 @@ links.forEach((link) => {
     let linkSrc = event.path[0].href;
     iframe.src = linkSrc;
     console.log(linkSrc);
+    let button = document.querySelectorAll(".dropdownContent");
+    button.forEach((element) => {
+      element.classList.remove("show");
+    });
+  });
+});
+
+home.addEventListener("click", () => {
+  iframe.src = "../about-me/index.html";
+  let button = document.querySelectorAll(".dropdownContent");
+  button.forEach((element) => {
+    element.classList.remove("show");
   });
 });
