@@ -47,7 +47,7 @@ links.forEach((link) => {
 });
 
 home.addEventListener("click", () => {
-  iframe.src = "../about-me/index.html";
+  iframe.src = "./aboutme.html";
   let button = document.querySelectorAll(".dropdownContent");
   button.forEach((element) => {
     element.classList.remove("show");
