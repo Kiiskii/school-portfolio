@@ -6,15 +6,12 @@ html {
 body {
   font-size: 1.2rem;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color: white;
+  color: rgb(137, 55, 55);
   margin: 1rem;
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background: linear-gradient(-45deg, #fff8ea, #9e7676, #815b5b, #594545);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
   height: 100vh;
-  animation-name: fadeIn;
-  animation-duration: 2s;
-  animation-iteration-count: 1;
   /* background-color: gainsboro;
   background-image: linear-gradient(to bottom right, rgb(137, 55, 55), white);
   background-position: center;
@@ -41,7 +38,7 @@ ul,
 ul li,
 p {
   margin: 1rem;
-  color: white;
+  color: black;
 }
 h1 {
   font-size: 3.5rem;
@@ -64,7 +61,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: black;
+  color: white;
   padding: 0.5rem;
 }
 header,
@@ -89,11 +86,11 @@ p {
   font-size: 1.4rem;
 }
 .wrapper {
-  border: 2px white solid;
+  border: 2px black solid;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 #navbar {
-  border-bottom: 2px white solid;
+  border-bottom: 2px black solid;
   text-align: center;
 }
 .logot {
@@ -117,24 +114,48 @@ iframe {
   flex-direction: row;
   justify-content: center;
 }
+
+.dropbtn,
 #home {
-  background-color: black;
+  display: flex;
+  align-items: center;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding: 0.7rem 1.4rem 0.7rem 1.1rem;
+  color: rgb(137, 55, 55);
+  background: #ad5389;
+  background: linear-gradient(0deg, rgb(54, 48, 48) 0%, rgb(20, 17, 17) 100%);
+  border: none;
+  box-shadow: 0 0.7em 1.5em -0.5em #040b0698;
+  letter-spacing: 0.05em;
+  border-radius: 10px;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  margin: 1rem 1rem 0 0;
+  /* background-color: black;
   color: white;
   font-weight: bold;
-}
-.dropbtn {
-  background-color: black;
-  color: white;
-  font-weight: bold;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: 7px; */
 }
 .dropdownContent {
   display: none;
   position: absolute;
-  background-color: white;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   margin: 0;
   animation-name: fadeIn;
-  animation-duration: 0.5s;
+  animation-duration: 1s;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: 7px;
 }
 
 @keyframes fadeIn {
@@ -171,6 +192,19 @@ iframe {
   }
   h1 {
     padding: 0;
+    font-size: 3.5rem;
+  }
+  h2 {
+    font-size: 1.8rem;
+  }
+  h3 {
+    font-size: 1.4rem;
+  }
+  #home {
+    font-size: 1.4rem;
+  }
+  .dropbtn {
+    font-size: 1.4rem;
   }
   header {
     height: 10vh;
