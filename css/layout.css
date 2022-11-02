@@ -41,17 +41,16 @@ p {
   color: black;
 }
 h1 {
-  font-size: 3.5rem;
+  font-size: 2.2rem;
   padding: 1rem 0 0 0;
-  font-family: fantasy;
   font-weight: bold;
   text-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 h2 {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
 }
 h3 {
-  font-size: 1.4rem;
+  font-size: 1rem;
 }
 ul {
   font-size: 1rem;
@@ -111,31 +110,31 @@ iframe {
 }
 #navbar > * {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .dropbtn,
 #home {
   display: flex;
+  text-align: center;
   align-items: center;
   font-family: inherit;
-  font-weight: 500;
-  font-size: 1.2rem;
-  padding: 0.7rem 1.4rem 0.7rem 1.1rem;
+  font-weight: bold;
+  font-size: 1rem;
   color: rgb(137, 55, 55);
-  background: #ad5389;
-  background: linear-gradient(0deg, rgb(54, 48, 48) 0%, rgb(20, 17, 17) 100%);
   border: none;
+  background-color: black;
+  padding: 1rem;
   box-shadow: 0 0.7em 1.5em -0.5em #040b0698;
-  letter-spacing: 0.05em;
-  border-radius: 10px;
+  border-radius: 7px;
   cursor: pointer;
+  width: 100px;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
   white-space: nowrap;
-  margin: 1rem 1rem 0 0;
   /* background-color: black;
   color: white;
   font-weight: bold;
@@ -174,6 +173,14 @@ iframe {
 /* Tablet näkymä */
 
 @media only screen and (min-width: 426px) {
+  #navbar > * {
+    display: flex;
+    flex-direction: row;
+  }
+  .dropbtn,
+  #home {
+    width: auto;
+  }
 }
 
 /* Desktop näkymä */
