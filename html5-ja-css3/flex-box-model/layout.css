@@ -1,60 +1,71 @@
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 body {
-    padding: 1rem;
+  padding: 1rem;
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 p {
-    padding: 1rem;
+  padding: 1rem;
 }
 
 h1 {
-    font-size: 2.5rem;
-    margin-block-end: 1rem;
+  font-size: 2.5rem;
+  margin-block-end: 1rem;
 }
 
 h2 {
-    font-size: 2.5rem;
-    margin-block-end: 1rem;
+  font-size: 2.5rem;
+  margin-block-end: 1rem;
 }
 
 article {
-    margin-block-end: 1rem;
+  margin-block-end: 1rem;
 }
 
 .parent {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 
-.parent>* {
-    flex-basis: 0;
-    flex-grow: 1;
-    order: 2;
-    border: 1px black solid;
+.parent > * {
+  flex-basis: 0;
+  flex-grow: 1;
+  order: 2;
+  border: 1px black solid;
 }
 
 .parent .color-red {
-    background-color: red;
+  background-color: red;
 }
 
 .parent .color-blue {
-    background-color: #00ABFF;
+  background-color: #00abff;
 }
 
 .parent .color-green {
-    background-color: green;
+  background-color: green;
 }
 
 .laatikko2 .color-blue,
 .laatikko3 .color-blue {
-    flex-grow: 2;
+  flex-grow: 2;
 }
 
-
 .laatikko3 .color-green {
-    order: 1;
+  order: 1;
 }

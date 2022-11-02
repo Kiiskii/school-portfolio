@@ -21,6 +21,21 @@ body {
   background-attachment: fixed;
   background-size: cover;
 }
+body {
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 h1 {
   font-size: 2.5rem;
   font-weight: bold;

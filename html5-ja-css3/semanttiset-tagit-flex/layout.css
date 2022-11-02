@@ -1,26 +1,39 @@
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 body {
-    font-size: 1.6rem;
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    /* gap: 5px; */
+  font-size: 1.6rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  /* gap: 5px; */
+}
+body {
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 /*Lisätään html-elementtiin flex*/
 .parent {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 /*Muotoillaan parent-elemntin lapset*/
-.parent>* {
-    flex-basis: 100%;
-    flex-grow: 1;
-
+.parent > * {
+  flex-basis: 100%;
+  flex-grow: 1;
 }
 
 /*lisätään tarkempi sääntö, eli se on section ja aside parentin sisällä*/
@@ -30,42 +43,42 @@ body {
     flex-grow: säännöllä saadaan leveyttä muokattua*/
 
 .parent section {
-    flex-basis: 0px;
+  flex-basis: 0px;
 }
 
 .parent aside {
-    flex-basis: 0px;
+  flex-basis: 0px;
 }
 
 h1 {
-    background-color: #DF1428;
-    padding: 1rem;
+  background-color: #df1428;
+  padding: 1rem;
 }
 
 p {
-    padding: 1rem;
+  padding: 1rem;
 }
 
 nav {
-    background-color: #F38F2D
+  background-color: #f38f2d;
 }
 
 section {
-    background-color: #FFC000;
-    padding-block-end: 1rem;
+  background-color: #ffc000;
+  padding-block-end: 1rem;
 }
 
 section article {
-    background-color: #7AC141;
-    margin-block-start: 1rem;
-    margin-inline-start: 1rem;
-    margin-inline-end: 1rem;
+  background-color: #7ac141;
+  margin-block-start: 1rem;
+  margin-inline-start: 1rem;
+  margin-inline-end: 1rem;
 }
 
 aside {
-    background-color: #026FB4;
+  background-color: #026fb4;
 }
 
 footer {
-    background-color: #932B8E;
+  background-color: #932b8e;
 }

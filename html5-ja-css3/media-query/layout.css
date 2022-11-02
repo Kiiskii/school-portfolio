@@ -4,84 +4,98 @@ Tämä web-sivu on määritelty mobile first
 */
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 1rem;
-    background-color: lightsalmon;
-    color: darkmagenta;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 1rem;
+  background-color: lightsalmon;
+  color: darkmagenta;
+}
+body {
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 p {
-    font-size: 1.6rem;
-    margin-block-end: 1rem;
+  font-size: 1.6rem;
+  margin-block-end: 1rem;
 }
 
 h1 {
-    font-size: 2.4rem;
-    margin-block-end: 1rem;
+  font-size: 2.4rem;
+  margin-block-end: 1rem;
 }
 
 .mobiili,
 .tablet,
 .desktop {
-    padding: 1rem;
-    display: inline-block;
-    margin-block-start: -1rem;
-    margin-inline-start: -1rem;
+  padding: 1rem;
+  display: inline-block;
+  margin-block-start: -1rem;
+  margin-inline-start: -1rem;
 }
 
 .mobiili {
-    background-color: darkmagenta;
-    color: lightsalmon;
+  background-color: darkmagenta;
+  color: lightsalmon;
 }
 
 .tablet {
-    background-color: blanchedalmond;
-    color: darkolivegreen;
-    display: none;
+  background-color: blanchedalmond;
+  color: darkolivegreen;
+  display: none;
 }
 
 .desktop {
-    background-color: darkgoldenrod;
-    color: lemonchiffon;
-    display: none;
+  background-color: darkgoldenrod;
+  color: lemonchiffon;
+  display: none;
 }
 
 /*
 Tablet-näkymän css-säännöt
 */
 @media only screen and (min-width: 426px) {
-    body {
-        background-color: darkolivegreen;
-        color: blanchedalmond;
-    }
+  body {
+    background-color: darkolivegreen;
+    color: blanchedalmond;
+  }
 
-    .mobiili {
-        display: none;
-    }
+  .mobiili {
+    display: none;
+  }
 
-    .tablet {
-        display: inline-block;
-    }
+  .tablet {
+    display: inline-block;
+  }
 }
 
 /*
 Desktop-näkymän css-säännöt
 */
 @media only screen and (min-width: 769px) {
-    body {
-        background-color: lemonchiffon;
-        color: darkgoldenrod;
-    }
+  body {
+    background-color: lemonchiffon;
+    color: darkgoldenrod;
+  }
 
-    .tablet {
-        display: none;
-    }
+  .tablet {
+    display: none;
+  }
 
-    .desktop {
-        display: inline-block;
-    }
+  .desktop {
+    display: inline-block;
+  }
 }

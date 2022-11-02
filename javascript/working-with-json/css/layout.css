@@ -7,6 +7,20 @@ body {
   width: 800px;
   margin: 0 auto;
 }
+body {
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
 
 h1,
 h2 {
