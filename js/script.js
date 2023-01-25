@@ -22,6 +22,15 @@ function myFunction2() {
   button.classList.toggle("show");
 }
 
+function myFunction3() {
+  let button = document.getElementById("dropdown3");
+  dropdownContents.forEach((element) => {
+    if (element != button) element.classList.remove("show");
+  });
+
+  button.classList.toggle("show");
+}
+
 // window.onclick = function (event) {
 //   if (!event.target.matches(".dropbtn")) {
 //     var dropdowns = document.getElementsByClassName("dropdownContent");
@@ -36,7 +45,8 @@ function myFunction2() {
 links.forEach((link) => {
   link.addEventListener("click", (event) => {
     event.preventDefault();
-    let linkSrc = event.path[0].href;
+    let target = event.target;
+    let linkSrc = target.href;
     iframe.src = linkSrc;
     console.log(linkSrc);
     let button = document.querySelectorAll(".dropdownContent");

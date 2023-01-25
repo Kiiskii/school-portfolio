@@ -7,7 +7,6 @@ body {
   font-size: 1.2rem;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: rgb(137, 55, 55);
-  margin: 1rem;
   background: linear-gradient(-60deg, #fff8ea, #9e7676, #815b5b, #fff8ea);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
@@ -37,7 +36,6 @@ h3,
 ul,
 ul li,
 p {
-  margin: 1rem;
   color: black;
 }
 h1 {
@@ -56,7 +54,7 @@ ul {
   font-size: 1rem;
 }
 a {
-  color: rgb(137, 55, 55);
+  color: white;
   text-decoration: none;
 }
 a:hover {
@@ -85,17 +83,18 @@ p {
   font-size: 1.4rem;
 }
 .wrapper {
-  border: 2px black solid;
+  border: 2px white solid;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 #navbar {
-  border-bottom: 2px black solid;
+  border-bottom: 2px white solid;
   text-align: center;
+  width: 100%;
 }
 .logot {
   font-size: 3rem;
   float: right;
-  margin: -3rem 0.5rem 0.5rem 0.5rem;
+  margin: -1rem 0.5rem 0.5rem 0.5rem;
 }
 .logot a {
   color: white;
@@ -115,22 +114,27 @@ iframe {
   align-items: center;
 }
 
+ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+ul li {
+  width: 100%;
+}
+
 .dropbtn,
 #home {
-  display: flex;
   text-align: center;
   align-items: center;
   font-family: inherit;
   font-weight: bold;
   font-size: 1rem;
-  color: rgb(137, 55, 55);
-  border: none;
   background-color: black;
   padding: 1rem;
-  box-shadow: 0 0.7em 1.5em -0.5em #040b0698;
-  border-radius: 7px;
+  /* box-shadow: 0 0.7em 1.5em -0.5em #040b0698; */
   cursor: pointer;
-  width: 100px;
+  width: 100%;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
@@ -141,7 +145,13 @@ iframe {
   font-size: 1rem;
   padding: 0.5rem;
   border-radius: 7px; */
+  text-align: center;
 }
+.dropbtn {
+  border-left: white 3px solid;
+  color: white;
+}
+
 .dropdownContent {
   display: none;
   position: absolute;
@@ -153,8 +163,14 @@ iframe {
   color: white;
   font-weight: bold;
   font-size: 1rem;
-  padding: 0.5rem;
-  border-radius: 7px;
+  border: white 3px solid;
+  box-shadow: 0 0.7em 1.5em -0.5em #040b0698;
+  padding: 0;
+  width: 100%;
+}
+.dropdownContent > * {
+  margin: 1rem;
+  padding: 0;
 }
 
 @keyframes fadeIn {
@@ -179,7 +195,10 @@ iframe {
   }
   .dropbtn,
   #home {
-    width: auto;
+    width: 100%;
+  }
+  .dropdownContent {
+    width: 24.5%;
   }
 }
 
@@ -197,6 +216,7 @@ iframe {
     flex-direction: column;
     flex-wrap: nowrap;
     height: 75vh;
+    width: 100%;
   }
   iframe {
     display: block;
@@ -221,5 +241,8 @@ iframe {
   }
   header {
     height: 10vh;
+  }
+  .dropdownContent {
+    width: 24.8%;
   }
 }
