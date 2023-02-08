@@ -6,8 +6,8 @@ html {
 body {
   font-size: 1.2rem;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color: rgb(137, 55, 55);
-  background: linear-gradient(-60deg, #fff8ea, #9e7676, #815b5b, #fff8ea);
+  color: rgb(235, 235, 235);
+  background: linear-gradient(-60deg, #ffffff, #e1e1e1, #a1a1a1, #fdfdfd);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
   height: 100vh;
@@ -206,7 +206,7 @@ ul li {
 
 @media only screen and (min-width: 769px) {
   body {
-    background: linear-gradient(-45deg, #fff8ea, #9e7676, #815b5b, #fff8ea);
+    background: linear-gradient(-45deg, #ffffff, #e1e1e1, #a1a1a1, #fdfdfd);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
     height: 100vh;
